@@ -8,6 +8,8 @@ Now focused on designing and implementing **end-to-end data pipeline systems**, 
 
 Experienced in building data workflows across **ingestion, processing, and serving layers**.
 
+Built and validated an end-to-end data pipeline system (NiFi → Airflow → Elasticsearch), ensuring consistent data flow across ingestion, processing, and serving layers.
+
 ---
 
 ## Why Data Engineering
