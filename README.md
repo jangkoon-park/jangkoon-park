@@ -4,11 +4,7 @@
 
 Software engineer with 17+ years of experience in enterprise systems (SI/SM), specializing in system maintenance, performance tuning, and operational stability.
 
-Now focused on designing and implementing **end-to-end data pipeline systems**, with an emphasis on **system boundaries, data flow reliability, and reproducible environments**.
-
-Experienced in building data workflows across **ingestion, processing, and serving layers**.
-
-Built and validated an end-to-end data pipeline system (NiFi → Airflow → Elasticsearch), ensuring consistent data flow across ingestion, processing, and serving layers.
+Now focused on designing and implementing **end-to-end data pipeline systems**, with an emphasis on **system boundaries, data flow reliability, and reproducible environments**. Built and validated both a file-based batch pipeline (NiFi → Airflow → Elasticsearch) and its streaming/distributed alternative (Kafka → Spark), so architectural trade-offs are backed by two working implementations rather than one implementation and an opinion.
 
 ---
 
@@ -17,7 +13,7 @@ Built and validated an end-to-end data pipeline system (NiFi → Airflow → Ela
 17 years inside enterprise systems provided deep insight into where data pipelines fail:
 
 * data duplication
-* silent data corruption
+* silent data corruption — a pipeline that runs cleanly and returns a wrong number
 * boundary mismatches between systems
 
 This experience directly translates into building **reliable, production-oriented data pipelines**.
@@ -26,11 +22,11 @@ This experience directly translates into building **reliable, production-oriente
 
 ## Core Strengths
 
-* End-to-end data pipeline design (ingestion → processing → serving)
+* End-to-end data pipeline design (ingestion → processing → serving), both file-based and streaming
 * Designing system boundaries across independent data layers
 * SQL performance tuning and execution plan optimization
+* Data cleaning as a testable contract — decisions scored against ground truth, not just implemented
 * Backend development (Java, Spring)
-* Data processing and transformation (Python, Pandas)
 * Enterprise system operations and maintenance
 
 ---
@@ -38,8 +34,8 @@ This experience directly translates into building **reliable, production-oriente
 ## Tech Stack
 
 * **Languages** — Python, SQL, Java
-* **Data Engineering** — Kafka, Spark, Airflow, NiFi
-* **Database** — Oracle, PostgreSQL, MySQL
+* **Database** — Oracle (17 years, enterprise ERP), PostgreSQL, MySQL
+* **Data Engineering** — Airflow, NiFi, Kafka, Spark, Pandas
 * **Backend** — Spring Framework, JSP
 * **Infrastructure** — Linux, Docker
 * **Tools** — Git, Jupyter Notebook
@@ -48,12 +44,12 @@ This experience directly translates into building **reliable, production-oriente
 
 ## Featured Projects
 
-| Repository                                                                                                      | Description                                                                                                             |
-| --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [sql-plan-tuning-labs](https://github.com/jangkoon-park/sql-plan-tuning-labs)                                   | SQL tuning with reproducible benchmarks and execution plan comparison (up to 45× performance improvement)               |
-| [data-engineering-pipeline-labs](https://github.com/jangkoon-park/data-engineering-pipeline-labs)               | End-to-end data pipeline (NiFi → Airflow → Elasticsearch) with Docker-based reproducibility and boundary-focused design |
-| [data-engineering-fundamentals-project](https://github.com/jangkoon-park/data-engineering-fundamentals-project) | Data engineering architecture and design decision study                                                                 |
-| [data-cleaning-labs](https://github.com/jangkoon-park/data-cleaning-labs)                                       | Data cleaning and transformation patterns using Pandas                                                                  |
+| Repository | Description |
+| --- | --- |
+| [sql-plan-tuning-labs](https://github.com/jangkoon-park/sql-plan-tuning-labs) | SQL tuning with reproducible benchmarks and execution plan comparison (up to 45× performance improvement) |
+| [data-engineering-pipeline-labs](https://github.com/jangkoon-park/data-engineering-pipeline-labs) | End-to-end pipeline built two ways — file-based (NiFi → Airflow → Elasticsearch) and streaming/distributed (Kafka → Spark) — with the trade-off between them measured, not assumed |
+| [data-engineering-fundamentals-project](https://github.com/jangkoon-park/data-engineering-fundamentals-project) | Architecture and design-decision study; every rejected alternative documented with its reasoning |
+| [data-cleaning-labs](https://github.com/jangkoon-park/data-cleaning-labs) | Cleaning decisions scored against ground truth — 57 contract tests, rejected approaches kept as failing-case assertions |
 
 ---
 
@@ -67,15 +63,14 @@ This experience directly translates into building **reliable, production-oriente
 
 ## Education
 
-* M.S. in Big Data MBA · Sejong University
+* Big Data MBA · Sejong University
 * B.S. in Mechanical Engineering · Sejong University
 
 ---
 
 ## Current Focus
 
-* Building production-oriented data pipeline systems
-* Strengthening system design and data architecture capabilities
-* Applying performance optimization techniques to data workflows
+* Extending pipeline and cleaning work toward cloud-native tooling (AWS/GCP)
+* Applying the same decision-record discipline to new data engineering problems
 
 ---
