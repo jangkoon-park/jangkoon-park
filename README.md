@@ -1,8 +1,8 @@
 # Jangkoon Park
 
-**Data Engineer | Pipeline Architecture | SQL Performance Optimization**
+**Data Engineer | Oracle Performance | Pipeline Architecture**
 
-Software engineer with 17+ years of experience in enterprise systems (SI/SM), specializing in system maintenance, performance tuning, and operational stability.
+Software engineer with 17+ years of experience in enterprise systems (SI/SM), specializing in Oracle-based system maintenance, performance tuning, and operational stability.
 
 Now focused on designing and implementing **end-to-end data pipeline systems**, with an emphasis on **system boundaries, data flow reliability, and reproducible environments**. Built and validated both a file-based batch pipeline (NiFi → Airflow → Elasticsearch) and its streaming/distributed alternative (Kafka → Spark), so architectural trade-offs are backed by two working implementations rather than one implementation and an opinion.
 
@@ -16,15 +16,15 @@ Now focused on designing and implementing **end-to-end data pipeline systems**, 
 * silent data corruption — a pipeline that runs cleanly and returns a wrong number
 * boundary mismatches between systems
 
-This experience directly translates into building **reliable, production-oriented data pipelines**.
+The expensive failures were rarely the ones that looked like failures. A query that hard-parses five hundred times a minute is fast in isolation and slows the whole database under load. A merge against a history-keeping dimension inflates a total by 22% without raising anything. This experience directly translates into building **reliable, production-oriented data pipelines**.
 
 ---
 
 ## Core Strengths
 
+* Oracle performance tuning — execution plans, statistics, bind variables, flashback recovery
 * End-to-end data pipeline design (ingestion → processing → serving), both file-based and streaming
 * Designing system boundaries across independent data layers
-* SQL performance tuning and execution plan optimization
 * Data cleaning as a testable contract — decisions scored against ground truth, not just implemented
 * Backend development (Java, Spring)
 * Enterprise system operations and maintenance
@@ -33,7 +33,7 @@ This experience directly translates into building **reliable, production-oriente
 
 ## Tech Stack
 
-* **Languages** — Python, SQL, Java
+* **Languages** — Python, SQL, PL/SQL, Java
 * **Database** — Oracle (17 years, enterprise ERP), PostgreSQL, MySQL
 * **Data Engineering** — Airflow, NiFi, Kafka, Spark, Pandas
 * **Backend** — Spring Framework, JSP
@@ -46,10 +46,11 @@ This experience directly translates into building **reliable, production-oriente
 
 | Repository | Description |
 | --- | --- |
-| [sql-plan-tuning-labs](https://github.com/jangkoon-park/sql-plan-tuning-labs) | SQL tuning with reproducible benchmarks and execution plan comparison (up to 45× performance improvement) |
+| [oracle-tuning-labs](https://github.com/jangkoon-park/oracle-tuning-labs) | Five Oracle production failure patterns reproduced locally — index-disabling predicates, row-by-row procedures, stale statistics, hard parsing, and flashback recovery. Each lab names the condition under which the rejected fix would have been correct |
+| [data-cleaning-labs](https://github.com/jangkoon-park/data-cleaning-labs) | Cleaning decisions scored against ground truth — 57 contract tests, rejected approaches kept as failing-case assertions |
 | [data-engineering-pipeline-labs](https://github.com/jangkoon-park/data-engineering-pipeline-labs) | End-to-end pipeline built two ways — file-based (NiFi → Airflow → Elasticsearch) and streaming/distributed (Kafka → Spark) — with the trade-off between them measured, not assumed |
 | [data-engineering-fundamentals-project](https://github.com/jangkoon-park/data-engineering-fundamentals-project) | Architecture and design-decision study; every rejected alternative documented with its reasoning |
-| [data-cleaning-labs](https://github.com/jangkoon-park/data-cleaning-labs) | Cleaning decisions scored against ground truth — 57 contract tests, rejected approaches kept as failing-case assertions |
+| [sql-plan-tuning-labs](https://github.com/jangkoon-park/sql-plan-tuning-labs) | PostgreSQL/MySQL tuning with reproducible benchmarks and execution plan comparison (up to 45× improvement) |
 
 ---
 
