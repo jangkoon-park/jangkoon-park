@@ -27,6 +27,7 @@ The expensive failures were rarely the ones that looked like failures. A query t
 * Designing system boundaries across independent data layers
 * Data cleaning as a testable contract — decisions scored against ground truth, not just implemented
 * Backend development (Java, Spring)
+* Web development alongside backend — HTML, CSS, JavaScript, SVG; data layer and presentation layer handled by one person
 * Enterprise system operations and maintenance
 
 ---
@@ -37,6 +38,7 @@ The expensive failures were rarely the ones that looked like failures. A query t
 * **Database** — Oracle (17 years, enterprise ERP), PostgreSQL, MySQL
 * **Data Engineering** — Airflow, NiFi, Kafka, Spark, Pandas
 * **Backend** — Spring Framework, JSP
+* **Frontend** — HTML, CSS, JavaScript, SVG
 * **Infrastructure** — Linux, Docker
 * **Tools** — Git, Jupyter Notebook
 
