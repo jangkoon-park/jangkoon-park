@@ -53,6 +53,7 @@ The expensive failures were rarely the ones that looked like failures. A query t
 | [data-engineering-pipeline-labs](https://github.com/jangkoon-park/data-engineering-pipeline-labs) | End-to-end pipeline built two ways — file-based (NiFi → Airflow → Elasticsearch) and streaming/distributed (Kafka → Spark) — with the trade-off between them measured, not assumed |
 | [data-engineering-fundamentals-project](https://github.com/jangkoon-park/data-engineering-fundamentals-project) | Architecture and design-decision study; every rejected alternative documented with its reasoning |
 | [sql-plan-tuning-labs](https://github.com/jangkoon-park/sql-plan-tuning-labs) | PostgreSQL/MySQL tuning with reproducible benchmarks and execution plan comparison (up to 45× improvement) |
+| [warehouse-map-svg](https://github.com/jangkoon-park/warehouse-map-svg) | Interactive warehouse floor plan drawn from a versioned layout record rather than a hand-drawn SVG — stock joins on location ID, and a CI check fails when inventory exists the map cannot show |
 
 ---
 
